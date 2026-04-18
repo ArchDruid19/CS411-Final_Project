@@ -1,9 +1,16 @@
+-- Filename: tables.sql
+--
+-- File purpose:
+-- This file creates all of the tables from the
+-- Fmuth welding schema with the necessary primary 
+-- and foreign key mappings
+
 -- ********************************
 -- Create Employee table
 -- empID, empName, empDOB, salary, ssn
 -- empID[PK]
 -- ********************************
-CREATE TABLE Employee(
+CREATE TABLE Employees(
     empID INTEGER NOT NULL,
     empName VARCHAR(255) NOT NULL,
     empDOB DATE NOT NULL,
@@ -55,7 +62,7 @@ CREATE TABLE WorkLogs(
     workedHours DECIMAL(10, 2) NOT NULL,
     workedDate DATE NOT NULL,
     PRIMARY KEY(workLogID),
-    FOREIGN KEY (empID) REFERENCES Employee(empID),
+    FOREIGN KEY (empID) REFERENCES Employees(empID),
     FOREIGN KEY (customerOrderID) REFERENCES CustomerOrders(orderID)
 );
 
@@ -80,7 +87,7 @@ CREATE TABLE Inventory(
     itemID INTEGER NOT NULL,
     itemLocation VARCHAR(128) NOT NULL,
     itemAmmount INTEGER NOT NULL,
-    PRIMARY KEY(itemID),
+    PRIMARY KEY(itemID, itemLocation),
     FOREIGN KEY(itemID) REFERENCES Items(itemID)
 );
 
@@ -98,7 +105,7 @@ CREATE TABLE InventoryHistory(
     transactionDate DATE NOT NULL,
     transactionAmmount INTEGER NOT NULL,
     PRIMARY KEY(transactionID),
-    FOREIGN KEY(empID) REFERENCES Employee(empID),
+    FOREIGN KEY(empID) REFERENCES Employees(empID),
     FOREIGN KEY(itemID) REFERENCES Items(itemID)
 );
 
