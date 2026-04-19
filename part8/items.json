@@ -18,22 +18,30 @@
             "inventoryHistory": [
                 {
                     "empID": 1,
-                    "transactionDate": "1/16/2025",
+                    "transactionDate": {
+                        "$date": "1/16/2025"
+                    },
                     "transactionAmmount": 50.00
                 },
                 {
                     "empID": 1,
-                    "transactionDate": "1/18/2025",
+                    "transactionDate": {
+                        "$date": "1/18/2025"
+                    },
                     "transactionAmmount": -20.00
                 },
                 {
                     "empID": 9,
-                    "transactionDate": "1/19/2025",
+                    "transactionDate": {
+                        "$date": "1/19/2025"
+                    },
                     "transactionAmmount": -10.00
                 },
                 {
                     "empID": 6,
-                    "transactionDate": "1/23/2025",
+                    "transactionDate": {
+                        "$date": "1/23/2025"
+                    },
                     "transactionAmmount": 30.00
                 }
             ]
@@ -54,22 +62,30 @@
             "inventoryHistory": [
                 {
                     "empID": 2,
-                    "transactionDate": "1/16/2025",
+                    "transactionDate": {
+                        "$date": "1/16/2025"
+                    },
                     "transactionAmmount": 40
                 },
                 {
                     "empID": 2,
-                    "transactionDate": "1/18/2025",
+                    "transactionDate": {
+                        "$date": "1/18/2025"
+                    },
                     "transactionAmmount": -15
                 },
                 {
                     "empID": 10,
-                    "transactionDate": "1/19/2025",
+                    "transactionDate": {
+                        "$date": "1/19/2025"
+                    },
                     "transactionAmmount": -8
                 },
                 {
                     "empID": 7,
-                    "transactionDate": "1/23/2025",
+                    "transactionDate": {
+                        "$date": "1/23/2025"
+                    },
                     "transactionAmmount": 25
                 }
             ]
@@ -90,17 +106,23 @@
             "inventoryHistory": [
                 {
                     "empID": 3,
-                    "transactionDate": "1/16/2025",
+                    "transactionDate": {
+                        "$date": "1/16/2025"
+                    },
                     "transactionAmmount": 60
                 },
                 {
                     "empID": 3,
-                    "transactionDate": "1/18/2025",
+                    "transactionDate": {
+                        "$date": "1/18/2025"
+                    },
                     "transactionAmmount": -25
                 },
                 {
                     "empID": 8,
-                    "transactionDate": "1/23/2025",
+                    "transactionDate": {
+                        "$date": "1/23/2025"
+                    },
                     "transactionAmmount": 40
                 }
             ]
@@ -125,12 +147,16 @@
             "inventoryHistory": [
                 {
                     "empID": 4,
-                    "transactionDate": "1/16/2025",
+                    "transactionDate": {
+                        "$date": "1/16/2025"
+                    },
                     "transactionAmmount": 30
                 },
                 {
                     "empID": 9,
-                    "transactionDate": "1/23/2025",
+                    "transactionDate": {
+                        "$date": "1/23/2025"
+                    },
                     "transactionAmmount": 20
                 }
             ]
@@ -151,12 +177,16 @@
             "inventoryHistory": [
                 {
                     "empID": 5,
-                    "transactionDate": "1/16/2025",
+                    "transactionDate": {
+                        "$date": "1/16/2025"
+                    },
                     "transactionAmmount": 25
                 },
                 {
                     "empID": 9,
-                    "transactionDate": "1/23/2025",
+                    "transactionDate": {
+                        "$date": "1/23/2025"
+                    },
                     "transactionAmmount": 15
                 }
             ]
@@ -176,12 +206,16 @@
             "inventoryHistory": [
                 {
                     "empID": 6,
-                    "transactionDate": "1/17/2025",
+                    "transactionDate": {
+                        "$date": "1/17/2025"
+                    },
                     "transactionAmmount": 1
                 },
                 {
                     "empID": 1,
-                    "transactionDate": "1/24/2025",
+                    "transactionDate": {
+                        "$date": "1/24/2025"
+                    },
                     "transactionAmmount": -1
                 }
             ]
@@ -194,19 +228,25 @@
         "Inventory": {
             "itemLocationsAndAmmounts": [
                 {
-                    "itemLocation": "Sector C",
+                    "itemLocation": {
+                        "$date": "Sector C"
+                    },
                     "itemAmmount": 0
                 }
             ],
             "inventoryHistory": [
                 {
                     "empID": 7,
-                    "transactionDate": "1/17/2025",
+                    "transactionDate": {
+                        "$date": "1/17/2025"
+                    },
                     "transactionAmmount": 1
                 },
                 {
                     "empID": 2,
-                    "transactionDate": "1/24/2025",
+                    "transactionDate": {
+                        "$date": "1/24/2025"
+                    },
                     "transactionAmmount": -1
                 }
             ]
@@ -226,12 +266,16 @@
             "inventoryHistory": [
                 {
                     "empID": 8,
-                    "transactionDate": "1/17/2025",
+                    "transactionDate": {
+                        "$date": "1/17/2025"
+                    },
                     "transactionAmmount": 1
                 },
                 {
                     "empID": 3,
-                    "transactionDate": "1/24/2025",
+                    "transactionDate": {
+                        "$date": "1/24/2025"
+                    },
                     "transactionAmmount": -1
                 }
             ]
@@ -251,12 +295,16 @@
             "inventoryHistory": [
                 {
                     "empID": 9,
-                    "transactionDate": "1/17/2025",
+                    "transactionDate": {
+                        "$date": "1/17/2025"
+                    },
                     "transactionAmmount": 1
                 },
                 {
                     "empID": 4,
-                    "transactionDate": "1/24/2025",
+                    "transactionDate": {
+                        "$date": "1/24/2025"
+                    },
                     "transactionAmmount": -1
                 }
             ]
@@ -276,12 +324,16 @@
             "inventoryHistory": [
                 {
                     "empID": 10,
-                    "transactionDate": "1/17/2025",
+                    "transactionDate": {
+                        "$date": "1/17/2025"
+                    },
                     "transactionAmmount": 1
                 },
                 {
                     "empID": 5,
-                    "transactionDate": "1/24/2025",
+                    "transactionDate": {
+                        "$date": "1/24/2025"
+                    },
                     "transactionAmmount": -1
                 }
             ]
@@ -302,12 +354,16 @@
             "inventoryHistory": [
                 {
                     "empID": 4,
-                    "transactionDate": "1/18/2025",
+                    "transactionDate": {
+                        "$date": "1/18/2025"
+                    },
                     "transactionAmmount": 40
                 },
                 {
                     "empID": 6,
-                    "transactionDate": "1/21/2025",
+                    "transactionDate": {
+                        "$date": "1/21/2025"
+                    },
                     "transactionAmmount": -15
                 }
             ]
@@ -328,12 +384,16 @@
             "inventoryHistory": [
                 {
                     "empID": 5,
-                    "transactionDate": "1/18/2025",
+                    "transactionDate": {
+                        "$date": "1/18/2025"
+                    },
                     "transactionAmmount": 30
                 },
                 {
                     "empID": 7,
-                    "transactionDate": "1/21/2025",
+                    "transactionDate": {
+                        "$date": "1/21/2025"
+                    },
                     "transactionAmmount": -10
                 }
             ]
@@ -354,12 +414,16 @@
             "inventoryHistory": [
                 {
                     "empID": 6,
-                    "transactionDate": "1/19/2025",
+                    "transactionDate": {
+                        "$date": "1/19/2025"
+                    },
                     "transactionAmmount": 35
                 },
                 {
                     "empID": 8,
-                    "transactionDate": "1/21/2025",
+                    "transactionDate": {
+                        "$date": "1/21/2025"
+                    },
                     "transactionAmmount": -12
                 }
             ]
@@ -380,12 +444,16 @@
             "inventoryHistory": [
                 {
                     "empID": 7,
-                    "transactionDate": "1/19/2025",
+                    "transactionDate": {
+                        "$date": "1/19/2025"
+                    },
                     "transactionAmmount": 20
                 },
                 {
                     "empID": 9,
-                    "transactionDate": "1/21/2025",
+                    "transactionDate": {
+                        "$date": "1/21/2025"
+                    },
                     "transactionAmmount": -5
                 }
             ]
@@ -406,12 +474,16 @@
             "inventoryHistory": [
                 {
                     "empID": 8,
-                    "transactionDate": "1/19/2025",
+                    "transactionDate": {
+                        "$date": "1/19/2025"
+                    },
                     "transactionAmmount": 18
                 },
                 {
                     "empID": 10,
-                    "transactionDate": "1/21/2025",
+                    "transactionDate": {
+                        "$date": "1/21/2025"
+                    },
                     "transactionAmmount": -8
                 }
             ]
@@ -431,12 +503,16 @@
             "inventoryHistory": [
                 {
                     "empID": 1,
-                    "transactionDate": "1/20/2025",
+                    "transactionDate": {
+                        "$date": "1/20/2025"
+                    },
                     "transactionAmmount": 1
                 },
                 {
                     "empID": 1,
-                    "transactionDate": "1/22/2025",
+                    "transactionDate": {
+                        "$date": "1/22/2025"
+                    },
                     "transactionAmmount": -1
                 }
             ]
@@ -456,7 +532,9 @@
             "inventoryHistory": [
                 {
                     "empID": 2,
-                    "transactionDate": "1/20/2025",
+                    "transactionDate": {
+                        "$date": "1/20/2025"
+                    },
                     "transactionAmmount": 1
                 }
             ]
@@ -469,14 +547,18 @@
         "Inventory": {
             "itemLocationsAndAmmounts": [
                 {
-                    "itemLocation": "Sector D",
+                    "itemLocation": {
+                        "$date": "Sector D"
+                    },
                     "itemAmmount": 1
                 }
             ],
             "inventoryHistory": [
                 {
                     "empID": 3,
-                    "transactionDate": "1/20/2025",
+                    "transactionDate": {
+                        "$date": "1/20/2025"
+                    },
                     "transactionAmmount": 1
                 }
             ]
@@ -496,7 +578,9 @@
             "inventoryHistory": [
                 {
                     "empID": 4,
-                    "transactionDate": "1/20/2025",
+                    "transactionDate": {
+                        "$date": "1/20/2025"
+                    },
                     "transactionAmmount": 1
                 }
             ]
@@ -516,12 +600,16 @@
             "inventoryHistory": [
                 {
                     "empID": 5,
-                    "transactionDate": "1/20/2025",
+                    "transactionDate": {
+                        "$date": "1/20/2025"
+                    },
                     "transactionAmmount": 1
                 },
                 {
                     "empID": 5,
-                    "transactionDate": "1/22/2025",
+                    "transactionDate": {
+                        "$date": "1/22/2025"
+                    },
                     "transactionAmmount": -1
                 }
             ]

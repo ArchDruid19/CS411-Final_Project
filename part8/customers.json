@@ -5,7 +5,9 @@
         "companyName": "BlueWave Solutions",
         "orders": [
             {
-                "orderDate": "01/15/2025",
+                "orderDate": {
+                    "$date": "01/15/2025"
+                },
                 "orderStatus": "completed",
                 "orderCost": 250.75,
                 "orderType": "in-house",
@@ -13,22 +15,30 @@
                     {
                         "empID": 1,
                         "workedHours": 6,
-                        "workedDate": "01/23/2025"
+                        "workedDate": {
+                            "$date": "01/23/2025"
+                        }
                     },
                     {
                         "empID": 7,
                         "workedHours": 5,
-                        "workedDate": "01/25/2025"
+                        "workedDate": {
+                            "$date": "01/25/2025"
+                        }
                     },
                     {
                         "empID": 4,
                         "workedHours": 6,
-                        "workedDate": "01/27/2025"
+                        "workedDate": {
+                            "$date": "01/27/2025"
+                        }
                     },
                     {
                         "empID": 3,
                         "workedHours": 5,
-                        "workedDate": "01/30/2025"
+                        "workedDate": {
+                            "$date": "01/30/2025"
+                        }
                     }
                 ]
             },
@@ -41,22 +51,30 @@
                     {
                         "empID": 9,
                         "workedHours": 8,
-                        "workedDate": "01/29/2025"
+                        "workedDate": {
+                            "$date": "01/29/2025"
+                        }
                     },
                     {
                         "empID": 2,
                         "workedHours": 6,
-                        "workedDate": "01/30/2025"
+                        "workedDate": {
+                            "$date": "01/30/2025"
+                        }
                     },
                     {
                         "empID": 6,
                         "workedHours": 7,
-                        "workedDate": "02/02/2025"
+                        "workedDate": {
+                            "$date": "02/02/2025"
+                        }
                     },
                     {
                         "empID": 3,
                         "workedHours": 5,
-                        "workedDate": "02/08/2025"
+                        "workedDate": {
+                            "$date": "02/08/2025"
+                        }
                     }
                 ]
             }
@@ -68,7 +86,9 @@
         "companyName": "Sunrise Technologies",
         "orders": [
             {
-                "orderDate": "01/18/2025",
+                "orderDate": {
+                    "$date": "01/18/2025"
+                },
                 "orderStatus": "worked-on",
                 "orderCost": 120.50,
                 "orderType": "in-house",
@@ -76,32 +96,44 @@
                     {
                         "empID": 2,
                         "workedHours": 7,
-                        "workedDate": "01/23/2025"
+                        "workedDate": {
+                            "$date": "01/23/2025"
+                        }
                     },
                     {
                         "empID": 5,
                         "workedHours": 6,
-                        "workedDate": "01/24/2025"
+                        "workedDate": {
+                            "$date": "01/24/2025"
+                        }
                     },
                     {
                         "empID": 8,
                         "workedHours": 6,
-                        "workedDate": "01/25/2025"
+                        "workedDate": {
+                            "$date": "01/25/2025"
+                        }
                     },
                     {
                         "empID": 6,
                         "workedHours": 5,
-                        "workedDate": "01/28/2025"
+                        "workedDate": {
+                            "$date": "01/28/2025"
+                        }
                     },
                     {
                         "empID": 4,
                         "workedHours": 7,
-                        "workedDate": "01/30/2025"
+                        "workedDate": {
+                            "$date": "01/30/2025"
+                        }
                     },
                     {
                         "empID": 10,
                         "workedHours": 5,
-                        "workedDate": "02/05/2025"
+                        "workedDate": {
+                            "$date": "02/05/2025"
+                        }
                     }
                 ]
             }
@@ -113,7 +145,9 @@
         "companyName": "Individual",
         "orders": [
             {
-                "orderDate": "01/20/2025",
+                "orderDate": {
+                    "$date": "01/20/2025"
+                },
                 "orderStatus": "completed",
                 "orderCost": 89.99,
                 "orderType": "mobile",
@@ -121,22 +155,30 @@
                     {
                         "empID": 3,
                         "workedHours": 5,
-                        "workedDate": "01/23/2025"
+                        "workedDate": {
+                            "$date": "01/23/2025"
+                        }
                     },
                     {
                         "empID": 6,
                         "workedHours": 7,
-                        "workedDate": "01/24/2025"
+                        "workedDate": {
+                            "$date": "01/24/2025"
+                        }
                     },
                     {
                         "empID": 1,
                         "workedHours": 5,
-                        "workedDate": "01/26/2025"
+                        "workedDate": {
+                            "$date": "01/26/2025"
+                        }
                     },
                     {
                         "empID": 8,
                         "workedHours": 7,
-                        "workedDate": "01/28/2025"
+                        "workedDate": {
+                            "$date": "01/28/2025"
+                        }
                     }
                 ]
             }
@@ -148,7 +190,9 @@
         "companyName": "GreenLeaf Enterprises",
         "orders": [
             {
-                "orderDate": "01/22/2025",
+                "orderDate": {
+                    "$date": "01/22/2025"
+                },
                 "orderStatus": "cancelled",
                 "orderCost": 45.00,
                 "orderType": "in-house",
@@ -156,32 +200,44 @@
                     {
                         "empID": 4,
                         "workedHours": 8,
-                        "workedDate": "01/24/2025"
+                        "workedDate": {
+                            "$date": "01/24/2025"
+                        }
                     },
                     {
                         "empID": 9,
                         "workedHours": 7,
-                        "workedDate": "01/25/2025"
+                        "workedDate": {
+                            "$date": "01/25/2025"
+                        }
                     },
                     {
                         "empID": 2,
                         "workedHours": 7,
-                        "workedDate": "01/26/2025"
+                        "workedDate": {
+                            "$date": "01/26/2025"
+                        }
                     },
                     {
                         "empID": 5,
                         "workedHours": 7,
-                        "workedDate": "01/27/2025"
+                        "workedDate": {
+                            "$date": "01/27/2025"
+                        }
                     },
                     {
                         "empID": 10,
                         "workedHours": 6,
-                        "workedDate": "01/29/2025"
+                        "workedDate": {
+                            "$date": "01/29/2025"
+                        }
                     },
                     {
                         "empID": 7,
                         "workedHours": 5,
-                        "workedDate": "02/02/2025"
+                        "workedDate": {
+                            "$date": "02/02/2025"
+                        }
                     }
                 ]
             }
@@ -193,7 +249,9 @@
         "companyName": "UrbanCore Systems",
         "orders": [
             {
-                "orderDate": "01/25/2025",
+                "orderDate": {
+                    "$date": "01/25/2025"
+                },
                 "orderStatus": "completed",
                 "orderCost": 310.20,
                 "orderType": "mobile",
@@ -201,22 +259,30 @@
                     {
                         "empID": 10,
                         "workedHours": 6,
-                        "workedDate": "01/26/2025"
+                        "workedDate": {
+                            "$date": "01/26/2025"
+                        }
                     },
                     {
                         "empID": 3,
                         "workedHours": 6,
-                        "workedDate": "01/27/2025"
+                        "workedDate": {
+                            "$date": "01/27/2025"
+                        }
                     },
                     {
                         "empID": 7,
                         "workedHours": 6,
-                        "workedDate": "01/28/2025"
+                        "workedDate": {
+                            "$date": "01/28/2025"
+                        }
                     },
                     {
                         "empID": 1,
                         "workedHours": 7,
-                        "workedDate": "01/29/2025"
+                        "workedDate": {
+                            "$date": "01/29/2025"
+                        }
                     }
                 ]
             }
@@ -234,7 +300,9 @@
         "companyName": "SilverLine Logistics",
         "orders": [
             {
-                "orderDate": "02/1/2025",
+                "orderDate": {
+                    "$date": "02/1/2025"
+                },
                 "orderStatus": "completed",
                 "orderCost": 220.40,
                 "orderType": "mobile",
@@ -242,12 +310,16 @@
                     {
                         "empID": 5,
                         "workedHours": 6,
-                        "workedDate": "02/02/2025"
+                        "workedDate": {
+                            "$date": "02/02/2025"
+                        }
                     },
                     {
                         "empID": 9,
                         "workedHours": 7,
-                        "workedDate": "02/05/2025"
+                        "workedDate": {
+                            "$date": "02/05/2025"
+                        }
                     }
                 ]
             }
@@ -259,7 +331,9 @@
         "companyName": "ClearPath Consulting",
         "orders": [
             {
-                "orderDate": "02/03/2025",
+                "orderDate": {
+                    "$date": "02/03/2025"
+                },
                 "orderStatus": "completed",
                 "orderCost": 75.25,
                 "orderType": "in-house",
@@ -267,17 +341,23 @@
                     {
                         "empID": 8,
                         "workedHours": 6,
-                        "workedDate": "02/05/2025"
+                        "workedDate": {
+                            "$date": "02/05/2025"
+                        }
                     },
                     {
                         "empID": 2,
                         "workedHours": 7,
-                        "workedDate": "02/08/2025"
+                        "workedDate": {
+                            "$date": "02/08/2025"
+                        }
                     },
                     {
                         "empID": 6,
                         "workedHours": 7,
-                        "workedDate": "02/11/2025"
+                        "workedDate": {
+                            "$date": "02/11/2025"
+                        }
                     }
                 ]
             }
@@ -289,7 +369,9 @@
         "companyName": "Individual",
         "orders": [
             {
-                "orderDate": "02/06/2025",
+                "orderDate": {
+                    "$date": "02/06/2025"
+                },
                 "orderStatus": "worked-on",
                 "orderCost": 199.99,
                 "orderType": "in-house",
@@ -297,12 +379,16 @@
                     {
                         "empID": 1,
                         "workedHours": 6,
-                        "workedDate": "02/08/2025"
+                        "workedDate": {
+                            "$date": "02/08/2025"
+                        }
                     },
                     {
                         "empID": 5,
                         "workedHours": 6,
-                        "workedDate": "02/11/2025"
+                        "workedDate": {
+                            "$date": "02/11/2025"
+                        }
                     }
                 ]
             }
@@ -314,7 +400,9 @@
         "companyName": "Horizon Ventures",
         "orders": [
             {
-                "orderDate": "02/10/2025",
+                "orderDate": {
+                    "$date": "02/10/2025"
+                },
                 "orderStatus": "completed",
                 "orderCost": 500.00,
                 "orderType": "mobile",
@@ -322,7 +410,9 @@
                     {
                         "empID": 6,
                         "workedHours": 7,
-                        "workedDate": "02/11/2025"
+                        "workedDate": {
+                            "$date": "02/11/2025"
+                        }
                     }
                 ]
             }

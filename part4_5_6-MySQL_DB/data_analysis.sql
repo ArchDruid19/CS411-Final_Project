@@ -25,22 +25,11 @@ WHERE i2.itemID IN
 			FROM items i 
 			WHERE i.itemType = "finished product"));
 
--- 2) Find the metal grade of the most stocked raw item
-SELECT mg.metalType
-FROM metalgrades mg
-WHERE mg.metalGradeID = 
-	(SELECT mi.metalGradeID
-	FROM metalitems mi
-	WHERE mi.itemID = 
-		(SELECT i.itemID
-		FROM items i
-		WHERE i.itemType = "raw"
-			AND i.itemID =
-				(SELECT inv2.itemID
-				FROM inventory inv2
-				WHERE inv2.itemAmmount = 
-					(SELECT MAX(inv.itemAmmount)
-					FROM inventory inv))));
+-- 2) Find the item locations that contain finished products
+SELECT DISTINCT inv.itemLocation
+FROM items i, inventory inv
+WHERE i.itemType = 'finished product'
+	AND inv.itemID = i.itemID
 
 -- 3) Find names of all customers who placed in-house orders between 2025-01-20 and 2025-02-01 that cost more than $100 (inclusive)
 SELECT c.customerName
