@@ -43,7 +43,9 @@
                 ]
             },
             {
-                "orderDate": "01/28/2025",
+                "orderDate": {
+                    "$date": "01/28/2025"
+                },
                 "orderStatus": "worked-on",
                 "orderCost": 150.00,
                 "orderType": "in-house",
