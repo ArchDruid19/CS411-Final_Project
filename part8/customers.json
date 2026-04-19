@@ -1,0 +1,225 @@
+[
+    {
+        "customerID": 1,
+        "customerName": "Alex Carter",
+        "companyName": "BlueWave Solutions",
+        "orders": [
+            {
+                "orderDate": "01/15/2025",
+                "orderStatus": "completed",
+                "orderCost": 250.75,
+                "orderType": "in-house",
+                "workLogs": [
+                    {
+                        "empID": 1,
+                        "workedHours": 6,
+                        "workedDate": "01/23/2025"
+                    },
+                    {
+                        "empID": 7,
+                        "workedHours": 5,
+                        "workedDate": "01/25/2025"
+                    },
+                    {
+                        "empID": 4,
+                        "workedHours": 6,
+                        "workedDate": "01/27/2025"
+                    },
+                    {
+                        "empID": 3,
+                        "workedHours": 5,
+                        "workedDate": "01/30/2025"
+                    }
+                ]
+            },
+            {
+                "orderDate": "01/28/2025",
+                "orderStatus": "worked-on",
+                "orderCost": 150.00,
+                "orderType": "in-house",
+                "workLogs": [
+                    {
+                        "empID": 9,
+                        "workedHours": 8,
+                        "workedDate": "01/29/2025"
+                    },
+                    {
+                        "empID": 2,
+                        "workedHours": 6,
+                        "workedDate": "01/30/2025"
+                    },
+                    {
+                        "empID": 6,
+                        "workedHours": 7,
+                        "workedDate": "02/02/2025"
+                    },
+                    {
+                        "empID": 3,
+                        "workedHours": 5,
+                        "workedDate": "02/08/2025"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customerID": 2,
+        "customerName": "Maria Lopez",
+        "companyName": "Sunrise Technologies",
+        "orders": [
+            {
+                "orderDate": "01/18/2025",
+                "orderStatus": "worked-on",
+                "orderCost": 120.50,
+                "orderType": "in-house",
+                "workLogs": [
+                    {
+                        "empID": 2,
+                        "workedHours": 7,
+                        "workedDate": "01/23/2025"
+                    },
+                    {
+                        "empID": 5,
+                        "workedHours": 6,
+                        "workedDate": "01/24/2025"
+                    },
+                    {
+                        "empID": 8,
+                        "workedHours": 6,
+                        "workedDate": "01/25/2025"
+                    },
+                    {
+                        "empID": 6,
+                        "workedHours": 5,
+                        "workedDate": "01/28/2025"
+                    },
+                    {
+                        "empID": 4,
+                        "workedHours": 7,
+                        "workedDate": "01/30/2025"
+                    },
+                    {
+                        "empID": 10,
+                        "workedHours": 5,
+                        "workedDate": "02/05/2025"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customerID": 3,
+        "customerName": "Kevin Patel",
+        "companyName": "Individual",
+        "orders": [
+            {
+                "orderDate": "01/20/2025",
+                "orderStatus": "completed",
+                "orderCost": 89.99,
+                "orderType": "mobile",
+                "workLogs": [
+                    {
+                        "empID": 3,
+                        "workedHours": 5,
+                        "workedDate": "01/23/2025"
+                    },
+                    {
+                        "empID": 6,
+                        "workedHours": 7,
+                        "workedDate": "01/24/2025"
+                    },
+                    {
+                        "empID": 1,
+                        "workedHours": 5,
+                        "workedDate": "01/26/2025"
+                    },
+                    {
+                        "empID": 8,
+                        "workedHours": 7,
+                        "workedDate": "01/28/2025"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customerID": 4,
+        "customerName": "Sophia Nguyen",
+        "companyName": "GreenLeaf Enterprises",
+        "orders": [
+            {
+                "orderDate": "01/22/2025",
+                "orderStatus": "cancelled",
+                "orderCost": 45.00,
+                "orderType": "in-house",
+                "workLogs": [
+                    {
+                        "empID": 4,
+                        "workedHours": 8,
+                        "workedDate": "01/24/2025"
+                    },
+                    {
+                        "empID": 9,
+                        "workedHours": 7,
+                        "workedDate": "01/25/2025"
+                    },
+                    {
+                        "empID": 2,
+                        "workedHours": 7,
+                        "workedDate": "01/26/2025"
+                    },
+                    {
+                        "empID": 5,
+                        "workedHours": 7,
+                        "workedDate": "01/27/2025"
+                    },
+                    {
+                        "empID": 10,
+                        "workedHours": 6,
+                        "workedDate": "01/29/2025"
+                    },
+                    {
+                        "empID": 7,
+                        "workedHours": 5,
+                        "workedDate": "02/02/2025"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customerID": 5,
+        "customerName": "James Robinson",
+        "companyName": "UrbanCore Systems",
+        "orders": [
+            {
+                "orderDate": "01/25/2025",
+                "orderStatus": "completed",
+                "orderCost": 310.20,
+                "orderType": "mobile",
+                "workLogs": [
+                    {
+                        "empID": 10,
+                        "workedHours": 6,
+                        "workedDate": "01/26/2025"
+                    },
+                    {
+                        "empID": 3,
+                        "workedHours": 6,
+                        "workedDate": "01/27/2025"
+                    },
+                    {
+                        "empID": 7,
+                        "workedHours": 6,
+                        "workedDate": "01/28/2025"
+                    },
+                    {
+                        "empID": 1,
+                        "workedHours": 7,
+                        "workedDate": "01/29/2025"
+                    }
+                ]
+            }
+        ]
+    }
+]
