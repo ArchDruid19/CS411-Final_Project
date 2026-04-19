@@ -321,8 +321,8 @@
         "Inventory": {
             "itemLocationsAndAmmounts": [
                 {
-                    "itemLocation": "Sector A",
-                    "itemAmmount": 16
+                    "itemLocation": "Sector E",
+                    "itemAmmount": 7
                 }
             ],
             "inventoryHistory": [

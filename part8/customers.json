@@ -221,5 +221,111 @@
                 ]
             }
         ]
+    },
+    {
+        "customerID": 6,
+        "customerName": "Isabella Martinez",
+        "companyName": "Peak Performance Inc",
+        "orders": []
+    },
+    {
+        "customerID": 7,
+        "customerName": "Daniel Kim",
+        "companyName": "SilverLine Logistics",
+        "orders": [
+            {
+                "orderDate": "02/1/2025",
+                "orderStatus": "completed",
+                "orderCost": 220.40,
+                "orderType": "mobile",
+                "workLogs": [
+                    {
+                        "empID": 5,
+                        "workedHours": 6,
+                        "workedDate": "02/02/2025"
+                    },
+                    {
+                        "empID": 9,
+                        "workedHours": 7,
+                        "workedDate": "02/05/2025"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customerID": 8,
+        "customerName": "Olivia Brown",
+        "companyName": "ClearPath Consulting",
+        "orders": [
+            {
+                "orderDate": "02/03/2025",
+                "orderStatus": "completed",
+                "orderCost": 75.25,
+                "orderType": "in-house",
+                "workLogs": [
+                    {
+                        "empID": 8,
+                        "workedHours": 6,
+                        "workedDate": "02/05/2025"
+                    },
+                    {
+                        "empID": 2,
+                        "workedHours": 7,
+                        "workedDate": "02/08/2025"
+                    },
+                    {
+                        "empID": 6,
+                        "workedHours": 7,
+                        "workedDate": "02/11/2025"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customerID": 9,
+        "customerName": "Ethan Wilson",
+        "companyName": "Individual",
+        "orders": [
+            {
+                "orderDate": "02/06/2025",
+                "orderStatus": "worked-on",
+                "orderCost": 199.99,
+                "orderType": "in-house",
+                "workLogs": [
+                    {
+                        "empID": 1,
+                        "workedHours": 6,
+                        "workedDate": "02/08/2025"
+                    },
+                    {
+                        "empID": 5,
+                        "workedHours": 6,
+                        "workedDate": "02/11/2025"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "customerID": 10,
+        "customerName": "Ava Thompson",
+        "companyName": "Horizon Ventures",
+        "orders": [
+            {
+                "orderDate": "02/10/2025",
+                "orderStatus": "completed",
+                "orderCost": 500.00,
+                "orderType": "mobile",
+                "workLogs": [
+                    {
+                        "empID": 6,
+                        "workedHours": 7,
+                        "workedDate": "02/11/2025"
+                    }
+                ]
+            }
+        ]
     }
 ]
