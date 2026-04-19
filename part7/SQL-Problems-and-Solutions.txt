@@ -1,0 +1,41 @@
+Great! At this point, you have successfully created a MySQL database for your organization. 
+Now, if you recall from the MongoDB chapter, we discussed several limitations and challenges associated with MySQL. 
+Your next task is to identify three problems related to your database, phrased as questions.
+
+Reflect on MongoDB and its advantages over MySQL to determine what issues might exist in your current database design. 
+Clearly state these three problems in question form.
+
+In the second part, you will write solutions from the perspective of a MongoDB database, 
+explaining how MongoDB could be used to address or overcome the problems you identified.
+
+----------------------------------------------------------------------------------------------------------------------
+
+1Q) What if I later wanted to add suppliers for differant raw items in my database? Wouldn't I either have to
+add a new table that relates the ID of an item to the name of a supplier, or add a new column in 'Items' for a supplier?
+
+1A) If you added a new table, everytime you needed to reference a supplier, you would have to perform a join on the two tables. 
+Similarly, if you already have a lot of data stored in the 'Items' table, then adding a new column for suppliers will cause all
+of the previous rows of data to have null values in the newly added column, unless you update the table which could be problematic 
+if there are millions of rows of data.
+Using MongoDB, instead of adding new tables or dealing with a bunch of null values, you could simply just start adding a supplier 
+field into each new item, and then update all of the older documents that need supplier information. While it is still a headache to
+update all of the older documents, you don't have to worry about introducing a bunch of null values for items that don't have suppliers
+yet, or create a new collections for the information; you can just start storing it whenever you want because of MongoDB's highly
+flexible document structure. 
+
+
+2Q) It is cumbersome to have to constantly join metalItems to metalGrades any time the grade
+of a raw material is needed in a query. I wanted to store the metal grades of an item in the Items table,
+but then I will have a bunch of null values for all of the 'finished products'. How can I store the 
+metal grades of only a portion of the items in the inventory without using a join table or introducing 
+a bunch of null values?  
+
+2A) Unlike SQL that uses a very ridid schema and structured tables, MongoDB uses documents whose structure is very flexible.
+If you wanted to store the metal grades for only raw items, then you can simply add a field to that raw item that contains
+the metal grade without having to add that same field to a finished product. This also has the benefit of getting
+rid of any joins; the data for the metal grade of the item is already embedded directly into the items data, so 
+querying for that information becomes much easier. 
+
+3Q)
+
+3A)
