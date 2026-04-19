@@ -1,0 +1,530 @@
+[
+    {
+        "itemID": 1,
+        "itemName": "Steel Rod",
+        "itemType": "raw",
+        "metalType": "Carbon Steel A36",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector A",
+                    "itemAmmount": 26
+                },
+                {
+                    "itemLocations:": "Sector B",
+                    "itemAmmount": 15
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 1,
+                    "transactionDate": "1/16/2025",
+                    "transactionAmmount": 50.00
+                },
+                {
+                    "empID": 1,
+                    "transactionDate": "1/18/2025",
+                    "transactionAmmount": -20.00
+                },
+                {
+                    "empID": 9,
+                    "transactionDate": "1/19/2025",
+                    "transactionAmmount": -10.00
+                },
+                {
+                    "empID": 6,
+                    "transactionDate": "1/23/2025",
+                    "transactionAmmount": 30.00
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 2,
+        "itemName": "Aluminum Sheet",
+        "itemType": "raw",
+        "metalType": "Aluminum 6061",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector A",
+                    "itemAmmount": 19
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 2,
+                    "transactionDate": "1/16/2025",
+                    "transactionAmmount": 40
+                },
+                {
+                    "empID": 2,
+                    "transactionDate": "1/18/2025",
+                    "transactionAmmount": -15
+                },
+                {
+                    "empID": 10,
+                    "transactionDate": "1/19/2025",
+                    "transactionAmmount": -8
+                },
+                {
+                    "empID": 7,
+                    "transactionDate": "1/23/2025",
+                    "transactionAmmount": 25
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 3,
+        "itemName": "Copper Wire",
+        "itemType": "raw",
+        "metalType": "Copper C110",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector B",
+                    "itemAmmount": 220
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 3,
+                    "transactionDate": "1/16/2025",
+                    "transactionAmmount": 60
+                },
+                {
+                    "empID": 3,
+                    "transactionDate": "1/18/2025",
+                    "transactionAmmount": -25
+                },
+                {
+                    "empID": 8,
+                    "transactionDate": "1/23/2025",
+                    "transactionAmmount": 40
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 4,
+        "itemName": "Brass Fitting",
+        "itemType": "raw",
+        "metalType": "Brass C360",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector D",
+                    "itemAmmount": 3
+                },
+                {
+                    "itemLocation": "Sector A",
+                    "itemAmmount": 100
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 4,
+                    "transactionDate": "1/16/2025",
+                    "transactionAmmount": 30
+                },
+                {
+                    "empID": 9,
+                    "transactionDate": "1/23/2025",
+                    "transactionAmmount": 20
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 5,
+        "itemName": "Titanium Bar",
+        "itemType": "raw",
+        "metalType": "Titanium Grade 5",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector B",
+                    "itemAmmount": 3
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 5,
+                    "transactionDate": "1/16/2025",
+                    "transactionAmmount": 25
+                },
+                {
+                    "empID": 9,
+                    "transactionDate": "1/23/2025",
+                    "transactionAmmount": 15
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 6,
+        "itemName": "Steel Membrane",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector D",
+                    "itemAmmount": 0
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 6,
+                    "transactionDate": "1/17/2025",
+                    "transactionAmmount": 1
+                },
+                {
+                    "empID": 1,
+                    "transactionDate": "1/24/2025",
+                    "transactionAmmount": -1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 7,
+        "itemName": "Aluminum Frame",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector C",
+                    "itemAmmount": 0
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 7,
+                    "transactionDate": "1/17/2025",
+                    "transactionAmmount": 1
+                },
+                {
+                    "empID": 2,
+                    "transactionDate": "1/24/2025",
+                    "transactionAmmount": -1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 8,
+        "itemName": "Copper Pipe",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector R",
+                    "itemAmmount": 0
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 8,
+                    "transactionDate": "1/17/2025",
+                    "transactionAmmount": 1
+                },
+                {
+                    "empID": 3,
+                    "transactionDate": "1/24/2025",
+                    "transactionAmmount": -1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 9,
+        "itemName": "Brass Valve",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector A",
+                    "itemAmmount": 0
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 9,
+                    "transactionDate": "1/17/2025",
+                    "transactionAmmount": 1
+                },
+                {
+                    "empID": 4,
+                    "transactionDate": "1/24/2025",
+                    "transactionAmmount": -1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 10,
+        "itemName": "Titanium Window Frame",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector B",
+                    "itemAmmount": 0
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 10,
+                    "transactionDate": "1/17/2025",
+                    "transactionAmmount": 1
+                },
+                {
+                    "empID": 5,
+                    "transactionDate": "1/24/2025",
+                    "transactionAmmount": -1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 11,
+        "itemName": "Steel Plate",
+        "itemType": "raw",
+        "metalType": "Alloy Steel 4140",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector e",
+                    "itemAmmount": 7
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 4,
+                    "transactionDate": "1/18/2025",
+                    "transactionAmmount": 40
+                },
+                {
+                    "empID": 6,
+                    "transactionDate": "1/21/2025",
+                    "transactionAmmount": -15
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 12,
+        "itemName": "Aluminum Tube",
+        "itemType": "raw",
+        "metalType": "Aluminum 7075",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector A",
+                    "itemAmmount": 16
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 5,
+                    "transactionDate": "1/18/2025",
+                    "transactionAmmount": 30
+                },
+                {
+                    "empID": 7,
+                    "transactionDate": "1/21/2025",
+                    "transactionAmmount": -10
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 13,
+        "itemName": "Copper Coil",
+        "itemType": "raw",
+        "metalType": "Copper C110",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector B",
+                    "itemAmmount": 4
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 6,
+                    "transactionDate": "1/19/2025",
+                    "transactionAmmount": 35
+                },
+                {
+                    "empID": 8,
+                    "transactionDate": "1/21/2025",
+                    "transactionAmmount": -12
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 14,
+        "itemName": "Brass Sheet",
+        "itemType": "raw",
+        "metalType": "Brass C360",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector C",
+                    "itemAmmount": 10
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 7,
+                    "transactionDate": "1/19/2025",
+                    "transactionAmmount": 20
+                },
+                {
+                    "empID": 9,
+                    "transactionDate": "1/21/2025",
+                    "transactionAmmount": -5
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 15,
+        "itemName": "Titanium Plate",
+        "itemType": "raw",
+        "metalType": "Titanium Grade 5",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector C",
+                    "itemAmmount": 6
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 8,
+                    "transactionDate": "1/19/2025",
+                    "transactionAmmount": 18
+                },
+                {
+                    "empID": 10,
+                    "transactionDate": "1/21/2025",
+                    "transactionAmmount": -8
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 16,
+        "itemName": "Steel Gear",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector B",
+                    "itemAmmount": 0
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 1,
+                    "transactionDate": "1/20/2025",
+                    "transactionAmmount": 1
+                },
+                {
+                    "empID": 1,
+                    "transactionDate": "1/22/2025",
+                    "transactionAmmount": -1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 17,
+        "itemName": "Aluminum Housing",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector A",
+                    "itemAmmount": 1
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 2,
+                    "transactionDate": "1/20/2025",
+                    "transactionAmmount": 1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 18,
+        "itemName": "Copper Pipe Connector",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector D",
+                    "itemAmmount": 1
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 3,
+                    "transactionDate": "1/20/2025",
+                    "transactionAmmount": 1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 19,
+        "itemName": "Brass Nozzle",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector D",
+                    "itemAmmount": 1
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 4,
+                    "transactionDate": "1/20/2025",
+                    "transactionAmmount": 1
+                }
+            ]
+        }
+    },
+    {
+        "itemID": 20,
+        "itemName": "Titanium Bracket",
+        "itemType": "finished product",
+        "Inventory": {
+            "itemLocationsAndAmmounts": [
+                {
+                    "itemLocation": "Sector B",
+                    "itemAmmount": 0
+                }
+            ],
+            "inventoryHistory": [
+                {
+                    "empID": 5,
+                    "transactionDate": "1/20/2025",
+                    "transactionAmmount": 1
+                },
+                {
+                    "empID": 5,
+                    "transactionDate": "1/22/2025",
+                    "transactionAmmount": -1
+                }
+            ]
+        }
+    }
+]

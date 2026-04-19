@@ -370,19 +370,19 @@ INSERT INTO InventoryHistory(transactionID, empID, itemID, transactionDate, tran
 VALUES(5, 5, 5, '2025-1-16', 25);
 
 INSERT INTO InventoryHistory(transactionID, empID, itemID, transactionDate, transactionAmmount)
-VALUES(6, 6, 6, '2025-1-17', 10);
+VALUES(6, 6, 6, '2025-1-17', 1);
 
 INSERT INTO InventoryHistory(transactionID, empID, itemID, transactionDate, transactionAmmount)
-VALUES(7, 7, 7, '2025-1-17', 8);
+VALUES(7, 7, 7, '2025-1-17', 1);
 
 INSERT INTO InventoryHistory(transactionID, empID, itemID, transactionDate, transactionAmmount)
-VALUES(8, 8, 8, '2025-1-17', 12);
+VALUES(8, 8, 8, '2025-1-17', 1);
 
 INSERT INTO InventoryHistory(transactionID, empID, itemID, transactionDate, transactionAmmount)
-VALUES(9, 9, 9, '2025-1-17', 6);
+VALUES(9, 9, 9, '2025-1-17', 1);
 
 INSERT INTO InventoryHistory(transactionID, empID, itemID, transactionDate, transactionAmmount)
-VALUES(10, 10, 10, '2025-1-17', 15);
+VALUES(10, 10, 10, '2025-1-17', 1);
 
 INSERT INTO InventoryHistory(transactionID, empID, itemID, transactionDate, transactionAmmount)
 VALUES(11, 1, 1, '2025-1-18', -20);

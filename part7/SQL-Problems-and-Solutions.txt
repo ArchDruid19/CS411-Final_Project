@@ -9,8 +9,7 @@ In the second part, you will write solutions from the perspective of a MongoDB d
 explaining how MongoDB could be used to address or overcome the problems you identified.
 
 ----------------------------------------------------------------------------------------------------------------------
-
-1Q) What if I later wanted to add suppliers for differant raw items in my database? Wouldn't I either have to
+1Q) What if I  wanted to add suppliers for differant raw items in my database? Wouldn't I either have to
 add a new table that relates the ID of an item to the name of a supplier, or add a new column in 'Items' for a supplier?
 
 1A) If you added a new table, everytime you needed to reference a supplier, you would have to perform a join on the two tables. 
@@ -20,9 +19,8 @@ if there are millions of rows of data.
 Using MongoDB, instead of adding new tables or dealing with a bunch of null values, you could simply just start adding a supplier 
 field into each new item, and then update all of the older documents that need supplier information. While it is still a headache to
 update all of the older documents, you don't have to worry about introducing a bunch of null values for items that don't have suppliers
-yet, or create a new collections for the information; you can just start storing it whenever you want because of MongoDB's highly
+yet, or create a new collection for the information; you can just start storing it whenever you want because of MongoDB's highly
 flexible document structure. 
-
 
 2Q) It is cumbersome to have to constantly join metalItems to metalGrades any time the grade
 of a raw material is needed in a query. I wanted to store the metal grades of an item in the Items table,
@@ -36,6 +34,9 @@ the metal grade without having to add that same field to a finished product. Thi
 rid of any joins; the data for the metal grade of the item is already embedded directly into the items data, so 
 querying for that information becomes much easier. 
 
-3Q)
+3Q) The company implemented a front end application that contains a real time hour tracker for each employee that is working on an 
+active customer order, but as the number of active customer orders and employees working on those orders grows, the longer it takes for the 
+information to be updated. Is there a better way to retrieve this data so we can get faster, more up to date information?
 
-3A)
+3A) Using MongoDB, the work hours of each employee can be embedded directly in each customers order so you do not have to do
+any complex joining, which can slow down the aggregation process.
