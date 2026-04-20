@@ -5,11 +5,6 @@
 -- that showcase the type of information that can be
 -- retrieved within the database
 
--- ********************************
--- Inventory queries
--- ********************************
-
-
 -- 1) Find the names of all finished products that are currently being held in inventory
 -- This is very useful as this finds all products that customers are waiting to pickup;
 -- if the finished product is still in our inventory, then either we havn't shipped it out
@@ -34,7 +29,7 @@ WHERE i.itemType = 'finished product'
 -- 3) Find names of all customers who placed in-house orders between 2025-01-20 and 2025-02-01 that cost more than $100 (inclusive)
 SELECT c.customerName
 FROM customers c
-	WHERE c.customerID IN
+	WHERE c.customerID INz
 	(SELECT co.customerID
 	FROM customerorders co
 	WHERE co.orderDate >= '2025-01-20' 
@@ -50,3 +45,21 @@ WHERE invh.transactionDate = '2025-01-19'
 		(SELECT i.itemID
 		FROM items i
 		WHERE i.itemName = "Brass Sheet");
+
+-- 5) Find all raw items that are stored in exactly 2 locations
+SELECT i.itemName
+FROM inventory inv, items i
+WHERE inv.itemID = i.itemID
+GROUP BY inv.itemID
+HAVING COUNT(inv.itemID) = 2
+
+-- 6) Find the names of customers who had one of there
+-- orders worked on between 2025-01-23 and 2025-01-24
+SELECT DISTINCT c.customerName
+FROM worklogs wl, customerorders co, customers c
+WHERE wl.customerOrderID = co.orderID
+	AND c.customerID = co.customerID 
+	AND wl.workedDate >= "2025-01-23"
+	AND wl.workedDate <= "2025-01-24";
+
+
