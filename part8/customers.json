@@ -6,7 +6,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "2025-01-15"
+                    "$date": "2025-01-15T00:00:00.000Z"
                 },
                 "orderStatus": "completed",
                 "orderCost": 250.75,
@@ -44,7 +44,7 @@
             },
             {
                 "orderDate": {
-                    "$date": "2025-01-18"
+                    "$date": "2025-01-28T00:00:00.000Z"
                 },
                 "orderStatus": "worked-on",
                 "orderCost": 150.00,
