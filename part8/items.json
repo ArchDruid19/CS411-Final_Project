@@ -19,28 +19,28 @@
                 {
                     "empID": 1,
                     "transactionDate": {
-                        "$date": "2025-1-16T00:00:00.000Z"
+                        "$date": "2025-01-16T00:00:00.000Z"
                     },
                     "transactionAmmount": 50.00
                 },
                 {
                     "empID": 1,
                     "transactionDate": {
-                        "$date": "2025-1-18T00:00:00.000Z"
+                        "$date": "2025-01-18T00:00:00.000Z"
                     },
                     "transactionAmmount": -20.00
                 },
                 {
                     "empID": 9,
                     "transactionDate": {
-                        "$date": "2025-1-19T00:00:00.000Z"
+                        "$date": "2025-01-19T00:00:00.000Z"
                     },
                     "transactionAmmount": -10.00
                 },
                 {
                     "empID": 6,
                     "transactionDate": {
-                        "$date": "2025-1-23T00:00:00.000Z"
+                        "$date": "2025-01-23T00:00:00.000Z"
                     },
                     "transactionAmmount": 30.00
                 }
@@ -63,28 +63,28 @@
                 {
                     "empID": 2,
                     "transactionDate": {
-                        "$date": "2025-1-16T00:00:00.000Z"
+                        "$date": "2025-01-16T00:00:00.000Z"
                     },
                     "transactionAmmount": 40
                 },
                 {
                     "empID": 2,
                     "transactionDate": {
-                        "$date": "2025-1-18T00:00:00.000Z"
+                        "$date": "2025-01-18T00:00:00.000Z"
                     },
                     "transactionAmmount": -15
                 },
                 {
                     "empID": 10,
                     "transactionDate": {
-                        "$date": "2025-1-19T00:00:00.000Z"
+                        "$date": "2025-01-19T00:00:00.000Z"
                     },
                     "transactionAmmount": -8
                 },
                 {
                     "empID": 7,
                     "transactionDate": {
-                        "$date": "2025-1-23T00:00:00.000Z"
+                        "$date": "2025-01-23T00:00:00.000Z"
                     },
                     "transactionAmmount": 25
                 }
