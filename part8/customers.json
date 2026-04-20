@@ -6,7 +6,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "01/15/2025"
+                    "$date": "2025-01-15T00:00:00.000Z"
                 },
                 "orderStatus": "completed",
                 "orderCost": 250.75,
@@ -16,35 +16,35 @@
                         "empID": 1,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/23/2025"
+                            "$date": "2025-01-23T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 7,
                         "workedHours": 5,
                         "workedDate": {
-                            "$date": "01/25/2025"
+                            "$date": "2025-01-25T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 4,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/27/2025"
+                            "$date": "2025-01-27T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 3,
                         "workedHours": 5,
                         "workedDate": {
-                            "$date": "01/30/2025"
+                            "$date": "2025-01-30T00:00:00.000Z"
                         }
                     }
                 ]
             },
             {
                 "orderDate": {
-                    "$date": "01/28/2025"
+                    "$date": "2025-01-18T00:00:00.000Z"
                 },
                 "orderStatus": "worked-on",
                 "orderCost": 150.00,
@@ -54,28 +54,28 @@
                         "empID": 9,
                         "workedHours": 8,
                         "workedDate": {
-                            "$date": "01/29/2025"
+                            "$date": "2025-01-29T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 2,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/30/2025"
+                            "$date": "2025-01-30T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 6,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "02/02/2025"
+                            "$date": "2025-02-02T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 3,
                         "workedHours": 5,
                         "workedDate": {
-                            "$date": "02/08/2025"
+                            "$date": "2025-02-08T00:00:00.000Z"
                         }
                     }
                 ]
@@ -89,7 +89,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "01/18/2025"
+                    "$date": "2025-01-18T00:00:00.000Z"
                 },
                 "orderStatus": "worked-on",
                 "orderCost": 120.50,
@@ -99,42 +99,42 @@
                         "empID": 2,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "01/23/2025"
+                            "$date": "2025-01-23T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 5,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/24/2025"
+                            "$date": "2025-01-24T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 8,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/25/2025"
+                            "$date": "2025-01-25T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 6,
                         "workedHours": 5,
                         "workedDate": {
-                            "$date": "01/28/2025"
+                            "$date": "2025-01-28T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 4,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "01/30/2025"
+                            "$date": "2025-01-30T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 10,
                         "workedHours": 5,
                         "workedDate": {
-                            "$date": "02/05/2025"
+                            "$date": "2025-02-05T00:00:00.000Z"
                         }
                     }
                 ]
@@ -148,7 +148,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "01/20/2025"
+                    "$date": "2025-01-20T00:00:00.000Z"
                 },
                 "orderStatus": "completed",
                 "orderCost": 89.99,
@@ -158,28 +158,28 @@
                         "empID": 3,
                         "workedHours": 5,
                         "workedDate": {
-                            "$date": "01/23/2025"
+                            "$date": "2025-01-23T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 6,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "01/24/2025"
+                            "$date": "2025-01-24T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 1,
                         "workedHours": 5,
                         "workedDate": {
-                            "$date": "01/26/2025"
+                            "$date": "2025-01-26T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 8,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "01/28/2025"
+                            "$date": "2025-01-28T00:00:00.000Z"
                         }
                     }
                 ]
@@ -193,7 +193,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "01/22/2025"
+                    "$date": "2025-01-22T00:00:00.000Z"
                 },
                 "orderStatus": "cancelled",
                 "orderCost": 45.00,
@@ -203,42 +203,42 @@
                         "empID": 4,
                         "workedHours": 8,
                         "workedDate": {
-                            "$date": "01/24/2025"
+                            "$date": "2025-01-24T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 9,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "01/25/2025"
+                            "$date": "2025-01-25T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 2,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "01/26/2025"
+                            "$date": "2025-01-26T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 5,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "01/27/2025"
+                            "$date": "2025-01-27T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 10,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/29/2025"
+                            "$date": "2025-01-29T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 7,
                         "workedHours": 5,
                         "workedDate": {
-                            "$date": "02/02/2025"
+                            "$date": "2025-02-02T00:00:00.000Z"
                         }
                     }
                 ]
@@ -252,7 +252,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "01/25/2025"
+                    "$date": "2025-01-25T00:00:00.000Z"
                 },
                 "orderStatus": "completed",
                 "orderCost": 310.20,
@@ -262,28 +262,28 @@
                         "empID": 10,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/26/2025"
+                            "$date": "2025-01-26T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 3,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/27/2025"
+                            "$date": "2025-01-27T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 7,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "01/28/2025"
+                            "$date": "2025-01-28T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 1,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "01/29/2025"
+                            "$date": "2025-01-29T00:00:00.000Z"
                         }
                     }
                 ]
@@ -303,7 +303,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "02/1/2025"
+                    "$date": "2025-02-01T00:00:00.000Z"
                 },
                 "orderStatus": "completed",
                 "orderCost": 220.40,
@@ -313,14 +313,14 @@
                         "empID": 5,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "02/02/2025"
+                            "$date": "2025-02-02T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 9,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "02/05/2025"
+                            "$date": "2025-02-05T00:00:00.000Z"
                         }
                     }
                 ]
@@ -334,7 +334,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "02/03/2025"
+                    "$date": "2025-02-03T00:00:00.000Z"
                 },
                 "orderStatus": "completed",
                 "orderCost": 75.25,
@@ -344,21 +344,21 @@
                         "empID": 8,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "02/05/2025"
+                            "$date": "2025-02-05T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 2,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "02/08/2025"
+                            "$date": "2025-02-08T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 6,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "02/11/2025"
+                            "$date": "2025-02-11T00:00:00.000Z"
                         }
                     }
                 ]
@@ -372,7 +372,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "02/06/2025"
+                    "$date": "2025-02-06T00:00:00.000Z"
                 },
                 "orderStatus": "worked-on",
                 "orderCost": 199.99,
@@ -382,14 +382,14 @@
                         "empID": 1,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "02/08/2025"
+                            "$date": "2025-02-08T00:00:00.000Z"
                         }
                     },
                     {
                         "empID": 5,
                         "workedHours": 6,
                         "workedDate": {
-                            "$date": "02/11/2025"
+                            "$date": "2025-02-11T00:00:00.000Z"
                         }
                     }
                 ]
@@ -403,7 +403,7 @@
         "orders": [
             {
                 "orderDate": {
-                    "$date": "02/10/2025"
+                    "$date": "2025-02-10T00:00:00.000Z"
                 },
                 "orderStatus": "completed",
                 "orderCost": 500.00,
@@ -413,7 +413,7 @@
                         "empID": 6,
                         "workedHours": 7,
                         "workedDate": {
-                            "$date": "02/11/2025"
+                            "$date": "2025-02-11T00:00:00.000Z"
                         }
                     }
                 ]

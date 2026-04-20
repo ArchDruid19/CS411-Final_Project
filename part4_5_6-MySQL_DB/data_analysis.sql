@@ -43,3 +43,10 @@ FROM customers c
     	AND co.orderType = 'in-house')
 
 -- 4) Find how many items with the name 'Brass Sheet' were added to the inventory on 2025-01-19
+SELECT SUM(invh.transactionAmmount) as total_brass_sheets
+FROM inventoryhistory invh
+WHERE invh.transactionDate = '2025-01-19'
+	AND invh.itemID = 
+		(SELECT i.itemID
+		FROM items i
+		WHERE i.itemName = "Brass Sheet");

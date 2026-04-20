@@ -3,7 +3,7 @@
         "empID": 1,
         "empName": "John A. Smith",
         "empDOB": {
-            "$date": "3/12/1985"
+            "$date": "1985-03-12T00:00:00.000Z"
         },
         "salary": 65000.00,
         "ssn": "123456789"
@@ -12,7 +12,7 @@
         "empID": 2,
         "empName": "Emily R. Johnson",
         "empDOB": {
-            "$date": "7/25/1990"
+            "$date": "1990-07-25T00:00:00.000Z"
         },
         "salary": 72000.00,
         "ssn": "234567890"
@@ -21,7 +21,7 @@
         "empID": 3,
         "empName": "Michael T. Brown",
         "empDOB": {
-            "$date": "11/2/1978"
+            "$date": "1978-11-02T00:00:00.000Z"
         },
         "salary": 88000.00,
         "ssn": "345678901"
@@ -30,7 +30,7 @@
         "empID": 4,
         "empName": "Sarah L. Davis",
         "empDOB": {
-            "$date": "1/19/1992"
+            "$date": "1992-01-19T00:00:00.000Z"
         },
         "salary": 54000.00,
         "ssn": "456789012"
@@ -39,7 +39,7 @@
         "empID": 5,
         "empName": "David K. Wilson",
         "empDOB": {
-            "$date": "9/30/1987"
+            "$date": "1987-09-30T00:00:00.000Z"
         },
         "salary": 61000.00,
         "ssn": "567890123"
@@ -48,7 +48,7 @@
         "empID": 6,
         "empName": "Laura M. Taylor",
         "empDOB": {
-            "$date": "6/14/1995"
+            "$date": "1995-06-14T00:00:00.000Z"
         },
         "salary": 50000.00,
         "ssn": "678901234"
@@ -57,7 +57,7 @@
         "empID": 7,
         "empName": "James P. Anderson",
         "empDOB": {
-            "$date": "12/8/1983"
+            "$date": "1983-12-08T00:00:00.000Z"
         },
         "salary": 77000.00,
         "ssn": "789012345"
@@ -66,7 +66,7 @@
         "empID": 8,
         "empName": "Olivia S. Thomas",
         "empDOB": {
-            "$date": "4/21/1998"
+            "$date": "1998-04-21T00:00:00.000Z"
         },
         "salary": 48000.00,
         "ssn": "890123456"
@@ -75,7 +75,7 @@
         "empID": 9,
         "empName": "Daniel J. Moore",
         "empDOB": {
-            "$date": "10/11/1975"
+            "$date": "1975-10-11T00:00:00.000Z"
         },
         "salary": 92000.00,
         "ssn": "901234567"
@@ -84,7 +84,7 @@
         "empID": 10,
         "empName": "Sophia E. Martin",
         "empDOB": {
-            "$date": "8/5/1993"
+            "$date": "1993-08-05T00:00:00.000Z"
         },
         "salary": 56000.00,
         "ssn": "678901870"
@@ -93,7 +93,7 @@
         "empID": 11,
         "empName": "Steely F. Dan",
         "empDOB": {
-            "$date": "10/3/1971"
+            "$date": "1971-10-03T00:00:00.000Z"
         },
         "salary": 40000.00,
         "ssn": "453901123"
