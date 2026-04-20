@@ -62,4 +62,25 @@ WHERE wl.customerOrderID = co.orderID
 	AND wl.workedDate >= "2025-01-23"
 	AND wl.workedDate <= "2025-01-24";
 
+-- 7) Find the ID of all employees who have worked on an order
+-- for 'Ethan Wilson'
+SELECT wl.empID
+FROM customers c, customerorders co, worklogs wl
+WHERE c.customerName = 'Ethan Wilson'
+	AND c.customerID = co.customerID
+    AND wl.customerOrderID = co.orderID
+
+
+-- 8) Find the name of each raw item stored in the inventory per location
+SELECT i2.itemName, inv.itemLocation
+FROM inventory inv, items i2 
+WHERE inv.itemID = i2.itemID
+	AND inv.itemAmmount > 0
+	AND inv.itemID IN (SELECT i1.itemID
+                   		FROM items i1
+                  		WHERE i1.itemType = 'raw')
+GROUP BY inv.itemLocation, inv.itemID;
+
+-- 9) Find all employees who transacted raw items between DATES
+
 
