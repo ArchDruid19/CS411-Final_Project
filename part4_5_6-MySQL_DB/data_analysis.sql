@@ -81,6 +81,18 @@ WHERE inv.itemID = i2.itemID
                   		WHERE i1.itemType = 'raw')
 GROUP BY inv.itemLocation, inv.itemID;
 
--- 9) Find all employees who transacted raw items between DATES
+-- 9) Find all employees who transacted finished products on 2025-01-24
+SELECT e.empName
+FROM inventoryhistory invh, items i, employees e
+WHERE invh.transactionDate = '2025-01-24'
+	AND invh.itemID = i.itemID
+    AND i.itemType = 'finished product'
+    AND e.empID = invh.empID
+
+-- 10) Find the sum of all transaction ammounts for an item with the name 'Brass Fitting' 
+SELECT SUM(invh.transactionAmmount)
+FROM inventoryhistory invh, items i
+WHERE i.itemID = invh.itemID
+	AND i.itemName = 'Brass Fitting';
 
 
