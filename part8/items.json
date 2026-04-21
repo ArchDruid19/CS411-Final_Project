@@ -12,7 +12,7 @@
                 },
                 {
                     "itemLocations:": "Sector B",
-                    "itemAmmount": 15
+                    "itemAmmount": 24
                 }
             ],
             "inventoryHistory": [
@@ -56,7 +56,7 @@
             "itemLocationsAndAmmounts": [
                 {
                     "itemLocation": "Sector A",
-                    "itemAmmount": 19
+                    "itemAmmount": 42
                 }
             ],
             "inventoryHistory": [
@@ -100,7 +100,7 @@
             "itemLocationsAndAmmounts": [
                 {
                     "itemLocation": "Sector B",
-                    "itemAmmount": 220
+                    "itemAmmount": 75
                 }
             ],
             "inventoryHistory": [
@@ -137,11 +137,11 @@
             "itemLocationsAndAmmounts": [
                 {
                     "itemLocation": "Sector D",
-                    "itemAmmount": 3
+                    "itemAmmount": 20
                 },
                 {
                     "itemLocation": "Sector A",
-                    "itemAmmount": 100
+                    "itemAmmount": 30
                 }
             ],
             "inventoryHistory": [
@@ -171,7 +171,7 @@
             "itemLocationsAndAmmounts": [
                 {
                     "itemLocation": "Sector B",
-                    "itemAmmount": 3
+                    "itemAmmount": 40
                 }
             ],
             "inventoryHistory": [
@@ -347,8 +347,8 @@
         "Inventory": {
             "itemLocationsAndAmmounts": [
                 {
-                    "itemLocation": "Sector e",
-                    "itemAmmount": 7
+                    "itemLocation": "Sector E",
+                    "itemAmmount": 25
                 }
             ],
             "inventoryHistory": [
@@ -378,7 +378,7 @@
             "itemLocationsAndAmmounts": [
                 {
                     "itemLocation": "Sector E",
-                    "itemAmmount": 7
+                    "itemAmmount": 20
                 }
             ],
             "inventoryHistory": [
@@ -408,7 +408,7 @@
             "itemLocationsAndAmmounts": [
                 {
                     "itemLocation": "Sector B",
-                    "itemAmmount": 4
+                    "itemAmmount": 23
                 }
             ],
             "inventoryHistory": [
@@ -438,7 +438,7 @@
             "itemLocationsAndAmmounts": [
                 {
                     "itemLocation": "Sector C",
-                    "itemAmmount": 10
+                    "itemAmmount": 15
                 }
             ],
             "inventoryHistory": [
@@ -468,7 +468,7 @@
             "itemLocationsAndAmmounts": [
                 {
                     "itemLocation": "Sector C",
-                    "itemAmmount": 6
+                    "itemAmmount": 10
                 }
             ],
             "inventoryHistory": [

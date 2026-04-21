@@ -289,16 +289,16 @@ INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
 VALUES(1, 'Sector A', 26);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(2, 'Sector A', 19);
+VALUES(2, 'Sector A', 42);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(3, 'Sector B', 220);
+VALUES(3, 'Sector B', 75);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(4, 'Sector D', 3);
+VALUES(4, 'Sector D', 20);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(5, 'Sector B', 5);
+VALUES(5, 'Sector B', 40);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
 VALUES(6, 'Sector D', 0);
@@ -316,19 +316,19 @@ INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
 VALUES(10, 'Sector B', 0);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(11, 'Sector A', 16);
+VALUES(11, 'Sector A', 25);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(12, 'Sector E', 7);
+VALUES(12, 'Sector E', 20);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(13, 'Sector B', 4);
+VALUES(13, 'Sector B', 23);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(14, 'Sector C', 10);
+VALUES(14, 'Sector C', 15);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(15, 'Sector C', 6);
+VALUES(15, 'Sector C', 10);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
 VALUES(16, 'Sector B', 0);
@@ -346,10 +346,10 @@ INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
 VALUES(20, 'Sector B', 0);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(1, 'Sector B', 15);
+VALUES(1, 'Sector B', 24);
 
 INSERT INTO Inventory(itemID, itemLocation, itemAmmount)
-VALUES(4, 'Sector A', 100);
+VALUES(4, 'Sector A', 30);
 
 -- ********************************
 -- Insert InventoryHistory data

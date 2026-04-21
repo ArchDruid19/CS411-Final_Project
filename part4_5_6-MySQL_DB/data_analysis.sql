@@ -13,10 +13,9 @@ SELECT DISTINCT inv.itemLocation, i.itemName
 FROM items i, inventory inv
 WHERE i.itemType = 'finished product'
 	AND inv.itemID = i.itemID
-    AND inv.itemAmmount >= 1
+    AND inv.itemAmmount >= 1;
 
--- 2) Find the locations and names of finished products that are currently
--- being held in inventory
+-- 2) Find the metal grade of the most stocked raw item
 
 
 -- 3) Find names of all customers who placed in-house orders between 2025-01-20 and 2025-02-01 that cost more than $100 (inclusive)
@@ -30,19 +29,17 @@ WHERE co.customerID = c.customerID
 
 -- 4) Find how many items with the name 'Brass Sheet' were transacted to the inventory on 2025-01-19
 SELECT SUM(invh.transactionAmmount) as total_brass_sheets
-FROM inventoryhistory invh
-WHERE invh.transactionDate = '2025-01-19'
-	AND invh.itemID = 
-		(SELECT i.itemID
-		FROM items i
-		WHERE i.itemName = "Brass Sheet");
+FROM inventoryhistory invh, items i
+WHERE invh.itemID = i.itemID 
+	AND invh.transactionDate = '2025-01-19'
+	AND i.itemName = 'Brass Sheet';
 
 -- 5) Find all raw items that are stored in more than 1 location
 SELECT i.itemName
 FROM inventory inv, items i
 WHERE inv.itemID = i.itemID
 GROUP BY inv.itemID
-HAVING COUNT(inv.itemID) = 2
+HAVING COUNT(inv.itemID) > 1;
 
 -- 6) Find the names of customers who had one of there
 -- orders worked on between 2025-01-23 and 2025-01-24
@@ -53,13 +50,14 @@ WHERE wl.customerOrderID = co.orderID
 	AND wl.workedDate >= "2025-01-23"
 	AND wl.workedDate <= "2025-01-24";
 
--- 7) Find the ID of all employees who have worked on an order
+-- 7) Find the name of all employees who have worked on an order
 -- for 'Ethan Wilson'
-SELECT wl.empID
-FROM customers c, customerorders co, worklogs wl
+SELECT e.empName
+FROM customers c, customerorders co, worklogs wl, employees e
 WHERE c.customerName = 'Ethan Wilson'
 	AND c.customerID = co.customerID
     AND wl.customerOrderID = co.orderID
+	AND e.empID = wl.empID;
 
 -- 8) Find the name of each raw item stored in the inventory per location
 SELECT i2.itemName, inv.itemLocation
@@ -77,12 +75,16 @@ FROM inventoryhistory invh, items i, employees e
 WHERE invh.transactionDate = '2025-01-24'
 	AND invh.itemID = i.itemID
     AND i.itemType = 'finished product'
-    AND e.empID = invh.empID
+    AND e.empID = invh.empID;
 
--- 10) Find the sum of all transaction ammounts for an item with the name 'Brass Fitting' 
-SELECT SUM(invh.transactionAmmount)
+-- 10) Find the sum of all transaction ammounts for each raw item, sorted in ascending order
+-- This query can be used to update the inventory for raw items; it sums all of the items ammount in the transactions
+-- history table for each raw item which should correspond to the inventory total in Inventory
+SELECT SUM(invh.transactionAmmount) as transaction_sum, i.itemName
 FROM inventoryhistory invh, items i
 WHERE i.itemID = invh.itemID
-	AND i.itemName = 'Brass Fitting';
+	AND i.itemType = 'raw'
+GROUP BY i.itemName
+ORDER BY transaction_sum ASC;
 
 
