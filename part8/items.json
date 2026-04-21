@@ -547,9 +547,7 @@
         "Inventory": {
             "itemLocationsAndAmmounts": [
                 {
-                    "itemLocation": {
-                        "$date": "Sector D"
-                    },
+                    "itemLocation": "Sector D",
                     "itemAmmount": 1
                 }
             ],
