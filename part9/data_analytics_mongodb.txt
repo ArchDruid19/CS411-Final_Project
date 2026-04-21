@@ -3,8 +3,11 @@ db["items"].find(
   {
     "itemType": "finished product",
     "Inventory.itemLocationsAndAmmounts.itemAmmount": {$gte: 1}
+  }, 
+  {
+    "itemName": 1, "_id": 0
   }
-, {"itemName": 1, "_id": 0});
+);
 
 
 2) Find the item locations that contain finished products
@@ -36,15 +39,23 @@ db["customers"].find(
 
 
 4) Find how many items with the name 'Brass Sheet' were added to the inventory on 2025-01-19
-db["items"].find(
+db["items"].aggregate([
   {
-    "itemName": "Brass Sheet",
-    "Inventory.inventoryHistory.transactionDate": new Date("2025-01-19T05:00:00Z")
+    $unwind: "$Inventory.inventoryHistory"
   },
   {
-    "Inventory.inventoryHistory.transactionDate": 1
+    $match: {
+      "itemName": "Brass Sheet",
+      "Inventory.inventoryHistory.transactionDate": new Date("2025-01-19")
+    }
+  },
+  {
+    $group: {
+      "_id": "$itemName",
+      "sum": {$sum: "$Inventory.inventoryHistory.transactionAmmount"}
+    }
   }
-);
+]);
 
 5) Find all raw items that are stored in exactly 2 locations
 db["items"].find(
@@ -57,7 +68,6 @@ db["items"].find(
     "itemName": 1
   }
 );
-
 
 6) Find the names of customers who had one of there
 orders worked on between 2025-01-23 and 2025-01-24
@@ -73,7 +83,6 @@ db["customers"].find(
     "customerName": 1
   }
 );
-
 
 7) Find the ID of all employees who have worked on an order
 for 'Ethan Wilson'
@@ -109,68 +118,4 @@ db["items"].aggregate([
 ]);
 
 10) Find the sum of all transaction ammounts for an item with the name 'Brass Fitting' 
-
-
-
-
-
-
-
-
-{
-    "Inventory.inventoryHistory.transactionDate": new Date("2025-01-24"),
-    "itemType": "finished product"
-  },
-  {
-    "_id": 0,
-    "Inventory.inventoryHistory.empID": 1
-  }
-
-
-
-
-
-db["items"].aggregate([
-    {
-    $match: {
-      "Inventory.inventoryHistory.transactionDate": new Date("2025-01-24"),
-    	"itemType": "finished product"
-    }  
-  },
-  {
-    $unwind: "$Inventory.inventoryHistory"
-  },
-  {
-      $project: {
-        "_id": 0
-      }
-    }
-]);
-
-
-
-
-
-
-
-
-This is an example of using unwind -- this successfully sums the items ammounts 
-the itemLocationsAndAmmounts array
-db["items"].aggregate([
-  {
-    $match: {
-      "itemName": "Brass Sheet"
-    }
-  },
-  {
-    $unwind: "$Inventory.itemLocationsAndAmmounts"
-  },
-  {
-    $group: {
-      "_id": "$itemName",
-      "sum": {$sum: "$Inventory.itemLocationsAndAmmounts.itemAmmount"}
-    }
-  }
-]);
-
 

@@ -20,7 +20,7 @@ WHERE i2.itemID IN
 			FROM items i 
 			WHERE i.itemType = "finished product"));
 
--- 2) Find the item locations that contain finished products
+-- 2) Find all of the item locations that contain finished products
 SELECT DISTINCT inv.itemLocation
 FROM items i, inventory inv
 WHERE i.itemType = 'finished product'
@@ -29,7 +29,7 @@ WHERE i.itemType = 'finished product'
 -- 3) Find names of all customers who placed in-house orders between 2025-01-20 and 2025-02-01 that cost more than $100 (inclusive)
 SELECT c.customerName
 FROM customers c
-	WHERE c.customerID INz
+	WHERE c.customerID IN
 	(SELECT co.customerID
 	FROM customerorders co
 	WHERE co.orderDate >= '2025-01-20' 
@@ -46,7 +46,7 @@ WHERE invh.transactionDate = '2025-01-19'
 		FROM items i
 		WHERE i.itemName = "Brass Sheet");
 
--- 5) Find all raw items that are stored in exactly 2 locations
+-- 5) Find all raw items that are stored in more than 1 location
 SELECT i.itemName
 FROM inventory inv, items i
 WHERE inv.itemID = i.itemID
@@ -69,7 +69,6 @@ FROM customers c, customerorders co, worklogs wl
 WHERE c.customerName = 'Ethan Wilson'
 	AND c.customerID = co.customerID
     AND wl.customerOrderID = co.orderID
-
 
 -- 8) Find the name of each raw item stored in the inventory per location
 SELECT i2.itemName, inv.itemLocation
