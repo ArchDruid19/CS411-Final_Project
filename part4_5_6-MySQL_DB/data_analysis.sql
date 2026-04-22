@@ -84,5 +84,3 @@ WHERE i.itemID = invh.itemID
 	AND i.itemType = 'raw'
 GROUP BY i.itemName
 ORDER BY transaction_sum ASC;
-
-
