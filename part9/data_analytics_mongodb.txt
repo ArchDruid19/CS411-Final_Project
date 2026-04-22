@@ -1,4 +1,4 @@
-1) Find the names of all finished products that are currently being held in inventory
+1) Find the names and locations of all finished products that are currently being held in inventory
 db["items"].find(
   {
     "itemType": "finished product",
