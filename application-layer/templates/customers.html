@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Customers</h1>
+
+{% for customer in customers %}
+    <div class="card">
+        <h3>{{ customer.customerName }}</h3>
+        <div>{{ customer.companyName }}</div>
+
+        <h4>Orders</h4>
+
+        {% for order in customer.orders %}
+            <div class="card">
+                <div>Status: {{ order.orderStatus }}</div>
+                <div>Cost: {{ order.orderCost }}</div>
+                <div>Type: {{ order.orderType }}</div>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+
+{% endblock %}

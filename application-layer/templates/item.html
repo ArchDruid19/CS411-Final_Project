@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ item.itemName }}</h1>
+
+<h3>Inventory History</h3>
+
+{% for txn in item.Inventory.inventoryHistory %}
+    <div class="card">
+        <div>Employee: {{ txn.empName }}</div>
+        <div>Amount: {{ txn.transactionAmmount }}</div>
+        <div>Date: {{ txn.transactionDate }}</div>
+    </div>
+{% endfor %}
+
+<h3>Add Transaction</h3>
+
+<form method="POST" action="/add_transaction">
+    <input type="hidden" name="itemID" value="{{ item.itemID }}">
+    <input type="number" name="empID" placeholder="Employee ID">
+    <input type="number" name="amount" placeholder="Amount">
+    <button type="submit">Add</button>
+</form>
+
+{% endblock %}

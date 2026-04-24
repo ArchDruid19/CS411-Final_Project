@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Main Dashboard</h1>
+
+<h2>Finished Products in Inventory</h2>
+{% for i in finished_products %}
+    <div class="card">
+        {{ i._id }} - {{ i.location }}
+    </div>
+{% endfor %}
+
+<h2>Employee Hours (Jan 23–30)</h2>
+{% for e in employee_hours %}
+    <div class="card">
+        {{ e.empName }} - {{ e.total_hours }} hours
+    </div>
+{% endfor %}
+
+<h2>Raw Items by Location</h2>
+{% for r in raw_items %}
+    <div class="card">
+        {{ r._id }} - {{ r.location }}
+    </div>
+{% endfor %}
+
+<h2>Inventory Totals</h2>
+{% for i in inventory_totals %}
+    <div class="card">
+        {{ i._id }}: {{ i.total }}
+    </div>
+{% endfor %}
+
+<h2>Active Orders</h2>
+
+{% for order in active_orders %}
+    <div class="card">
+        <div><strong>{{ order.customerName }}</strong> ({{ order.companyName }})</div>
+        <div>Status: {{ order.orderStatus }}</div>
+        <div>Cost: {{ order.orderCost }}</div>
+        <div>Date: {{ order.orderDate }}</div>
+    </div>
+{% endfor %}
+
+{% endblock %}
