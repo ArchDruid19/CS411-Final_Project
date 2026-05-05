@@ -1,11 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 from datetime import datetime
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 
-# MongoDB connection (yes I know this is HORRIBLE, this database is getting nuked once the application layer is done being shown)
-client = MongoClient("mongodb+srv://ddvest:druid2019@ddv.qyihwhz.mongodb.net/")
+load_dotenv()
+
+mongo_db_uri = os.getenv("MONGO_DB_URI")
+
+client = MongoClient(mongo_db_uri)
 db = client["cs411final"]
 
 # Collections
