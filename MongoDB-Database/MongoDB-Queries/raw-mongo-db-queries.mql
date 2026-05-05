@@ -1,4 +1,3 @@
-// 1) Find the names and locations for each ‘finished product’ that is currently being held in inventory. 
 db["items"].aggregate([
   {
     $unwind: "$Inventory.itemLocationsAndAmmounts"
@@ -19,7 +18,6 @@ db["items"].aggregate([
   }
 ]);
 
-// 2) Find the names of each employee along with the total number of hours they worked between the dates ‘2025-01-23' and ‘2025-01-30' 
 db["customers"].aggregate([
   {
     $unwind: "$orders"
@@ -45,7 +43,6 @@ db["customers"].aggregate([
   }
 ]);
 
-// 3) Find names of all customers who placed ‘in-house’ orders between the dates ‘2025-01-20' and ‘2025-02-01' that cost more than $100 (inclusive)
 db["customers"].find(
   {
     "orders.orderType": "in-house",
@@ -63,7 +60,6 @@ db["customers"].find(
   }
 );
 
-// 4) 4) Find how many items with the name 'Brass Sheet' were transacted to the inventory on ‘2025-01-19'
 db["items"].aggregate([
   {
     $unwind: "$Inventory.inventoryHistory"
@@ -84,7 +80,6 @@ db["items"].aggregate([
   }
 ]);
 
-// 5) Find all ‘raw’ items that are stored in exactly 2 locations 
 db["items"].find(
   {
     "itemType": "raw",
@@ -98,7 +93,6 @@ db["items"].find(
   }
 );
 
-// 6) Find the names of customers who had one of their orders worked on between the dates ‘2025-01-23' and ‘2025-01-24'
 db["customers"].distinct(
   "customerName",
   {
@@ -113,7 +107,6 @@ db["customers"].distinct(
   }
 );
 
-// 7) Find the ID of all employees who have worked on an order for 'Ethan Wilson' 
 db["customers"].aggregate([
   {
     $match: {
@@ -133,7 +126,6 @@ db["customers"].aggregate([
   }
 ]);
 
-// 8) Find the name of each raw item stored in the inventory per location 
 db["items"].aggregate([
   {
     $match: {
@@ -151,7 +143,6 @@ db["items"].aggregate([
   }
 ]);
 
-// 9) Find all employees who transacted finished products on ‘2025-01-24' 
 db["items"].aggregate([
   {
     $unwind: "$Inventory.inventoryHistory"
@@ -168,7 +159,6 @@ db["items"].aggregate([
   }
 ]);
 
-// 10) Find the sum of all transaction amounts for each raw item, sorted in ascending order 
 db["items"].aggregate([
   {
     $match: {

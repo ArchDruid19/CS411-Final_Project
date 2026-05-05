@@ -1,11 +1,11 @@
 # CS411-Final_Project
-Database design for Frankenmuth Welding using  MySQL and NoSQL (MongoDB)
+This is my final project for CS411 Database Systems: a database for Frankenmuth Welding designed using both MySQL and NoSQL (MongoDB). 
+
+* [MySQL Database Shema](SQL-Schema/SQL_Schema.png)
 
 
-* [MySQL Database Shema](part2-Schema/PNG/SQL_Schema.png)
+* [MySQL Database ER Diagram](SQL-ER-Diagrams/Crows-Foot-Notation/SQL_Crows_Foot_ER_Diagram.png)
 
 
-* [MySQL Database ER Diagram](part3-ER_Diagram/Crows-Foot-Notation/SQL_Crows_Foot_ER_Diagram.png)
+* The font end/back end testing application can be found [here](Test-Application).
 
-
-* [Application Layer using PyMongo and Flask](application-layer)

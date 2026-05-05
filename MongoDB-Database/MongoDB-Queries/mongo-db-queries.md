@@ -1,0 +1,217 @@
+<h2><center>MongoDB Queries</center></h2>
+
+1) Find the names and locations for each ‘finished product’ that is currently being held in inventory. 
+```json
+db["items"].aggregate([
+  {
+    $unwind: "$Inventory.itemLocationsAndAmmounts"
+  },
+  {
+    $match: {
+      "itemType": "finished product",
+      "Inventory.itemLocationsAndAmmounts.itemAmmount": {
+      	$gte: 1
+    	}
+    }
+  },
+  {
+    $project: {
+      "_id": "$itemName",
+      "location": "$Inventory.itemLocationsAndAmmounts.itemLocation"
+    }
+  }
+]);
+```
+
+2) Find the names of each employee along with the total number of hours they worked between the dates ‘2025-01-23' and ‘2025-01-30' 
+```json
+db["customers"].aggregate([
+  {
+    $unwind: "$orders"
+  },
+  {
+    $unwind: "$orders.workLogs"
+  },
+  {
+    $match: {
+      "orders.workLogs.workedDate": {
+        $gte: new Date("2025-01-23"),
+        $lte: new Date("2025-01-30")
+      }
+    }
+  },
+  {
+    $group: {
+      "_id": "$orders.workLogs.empID",
+      "total_work_hours": {
+        $sum: "$orders.workLogs.workedHours"
+      }
+    }
+  }
+]);
+```
+
+3) Find names of all customers who placed ‘in-house’ orders between the dates ‘2025-01-20' and ‘2025-02-01' that cost more than $100 (inclusive)
+
+```json
+db["customers"].find(
+  {
+    "orders.orderType": "in-house",
+    "orders.orderDate": {
+      $gte: new Date("2025-01-20"),
+      $lte: new Date("2025-02-01")
+    },
+    "orders.orderCost": {
+      $gte: 100
+    }
+  },
+  {
+    "_id": 0,
+    "customerName": 1
+  }
+);
+```
+
+4) Find how many items with the name 'Brass Sheet' were transacted to the inventory on ‘2025-01-19'
+```json
+db["items"].aggregate([
+  {
+    $unwind: "$Inventory.inventoryHistory"
+  },
+  {
+    $match: {
+      "itemName": "Brass Sheet",
+      "Inventory.inventoryHistory.transactionDate": new Date ("2025-01-19")
+    }
+  },
+  {
+    $group: {
+      "_id": "$itemName",
+      "itemSum": {
+        $sum: "$Inventory.inventoryHistory.transactionAmmount"
+      }
+    }
+  }
+]);
+```
+
+5) Find all ‘raw’ items that are stored in exactly 2 locations 
+```json
+db["items"].find(
+  {
+    "itemType": "raw",
+    "Inventory.itemLocationsAndAmmounts": {
+      $size: 2
+    }
+  },
+  {
+    "_id": 0,
+    "itemName": 1
+  }
+);
+```
+
+6) Find the names of customers who had one of their orders worked on between the dates ‘2025-01-23' and ‘2025-01-24'
+```json
+db["customers"].distinct(
+  "customerName",
+  {
+    "orders.workLogs.workedDate": {
+      $gte: new Date("2025-01-23"),
+      $lte: new Date("2025-01-24")
+    }
+  },
+  {
+    "_id": 0,
+    "customerName": 1
+  }
+);
+```
+
+7) Find the ID of all employees who have worked on an order for 'Ethan Wilson' 
+```json
+db["customers"].aggregate([
+  {
+    $match: {
+      "customerName": "Ethan Wilson"
+    }
+  },
+  {
+    $unwind: "$orders"
+  },
+  {
+    $unwind: "$orders.workLogs"
+  },
+  {
+    $project: {
+      "_id": "$orders.workLogs.empID"
+    }
+  }
+]);
+```
+
+8) Find the name of each raw item stored in the inventory per location 
+```json
+db["items"].aggregate([
+  {
+    $match: {
+      "itemType": "raw"
+    }
+  },
+  {
+    $unwind: "$Inventory.itemLocationsAndAmmounts"
+  },
+  {
+    $project: {
+      "_id": "$itemName",
+      "location": "$Inventory.itemLocationsAndAmmounts.itemLocation"
+    }
+  }
+]);
+```
+
+9) Find all employees who transacted finished products on ‘2025-01-24' 
+```json
+db["items"].aggregate([
+  {
+    $unwind: "$Inventory.inventoryHistory"
+  },
+  {
+    $match: {
+      "Inventory.inventoryHistory.transactionDate": new Date("2025-01-24")
+    }
+  },
+  {
+    $project: {
+      "_id": "$Inventory.inventoryHistory.empID"
+    }
+  }
+]);
+```
+
+10) Find the sum of all transaction amounts for each raw item, sorted in ascending order 
+```json
+db["items"].aggregate([
+  {
+    $match: {
+      "itemType": "raw"
+    }
+  },
+  {
+    $unwind: "$Inventory.itemLocationsAndAmmounts"
+  },
+  {
+    $group: {
+      "_id": "$itemName",
+      "transaction_sum": {
+        $sum: "$Inventory.itemLocationsAndAmmounts.itemAmmount"
+      }
+    }
+  },
+  {
+    $sort: {
+      "transaction_sum": 1
+    }
+  }
+]);
+```
